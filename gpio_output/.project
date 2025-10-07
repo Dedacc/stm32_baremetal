@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>gpio_output</name>
+	<name>gpio_input_driver</name>
 	<comment></comment>
 	<projects>
 	</projects>

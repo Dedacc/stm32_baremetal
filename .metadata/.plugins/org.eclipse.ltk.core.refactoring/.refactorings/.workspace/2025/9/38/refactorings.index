@@ -1,0 +1,7 @@
+1757811424064	Delete resource '0_led_toggle_addr'
+1757813074331	Delete resource '0_led_toggle_addr'
+1757813190495	Delete resource '0_led_toggle_addr'
+1758348649305	Rename resource 'gpio_input_driver'
+1758348666143	Rename resource 'gpio_output_using_bsrr'
+1758349072968	Rename resource 'gpio_input_driver'
+1758349088548	Rename resource 'gpio_output'

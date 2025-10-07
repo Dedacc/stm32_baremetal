@@ -1,0 +1,17 @@
+11:47:10 **** Incremental Build of configuration Debug for project gpio_output ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411RETx -DSTM32F411xE -c -I../Inc -I/home/shivam/stm32_baremetal/chip_headers/CMSIS/Device/ST/STM32F4xx/Include -I/home/shivam/STM32CubeF4/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "gpio_output.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/shivam/stm32_baremetal/gpio_output/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="gpio_output.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: gpio_output.elf
+ 
+arm-none-eabi-size  gpio_output.elf 
+arm-none-eabi-objdump -h -S gpio_output.elf  > "gpio_output.list"
+   text	   data	    bss	    dec	    hex	filename
+    780	      0	   1568	   2348	    92c	gpio_output.elf
+Finished building: default.size.stdout
+ 
+Finished building: gpio_output.list
+ 
+
+11:47:10 Build Finished. 0 errors, 0 warnings. (took 123ms)
+

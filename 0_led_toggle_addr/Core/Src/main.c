@@ -1,3 +1,4 @@
+#include
 #define PERIPH_BASE 																				(0x40000000UL) /*UL=unsigned(positive) long(data type)*/
 #define AHB1PERIPH_OFFSET    															(0x00020000UL) /*memory address starts*/
 #define AHB1PERIPH_BASE      																(PERIPH_BASE+AHB1PERIPH_OFFSET) /*starting address*/
@@ -5,7 +6,7 @@
 #define GPIOA_BASE																					(AHB1PERIPH_BASE+GPIOA_OFFSET)
 #define RCC_OFFSET																					(0x3800UL)
 #define RCC_BASE																						(AHB1PERIPH_BASE + RCC_OFFSET)
-/*Located the house now time to find rooms*/
+
 #define AHB1EN_R_OFFSET                                                                  (0x30UL)
 #define RCC_AHB1EN_R																			(*(volatile unsigned int *)(RCC_BASE+AHB1EN_R_OFFSET))
 #define GPIOAEN																							(1U<<0) //0b 0000 0000 0000 0000 0000 0000 0000 0001//
